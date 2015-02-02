@@ -19,7 +19,11 @@ describe('BowlingScoreCard', function(){
       expect(scorecard.inputScore(5)).toEqual(5);
     });
 
+    it("has to be within 0-9", function(){
+      expect(scorecard.inputScore(11)).toEqual("Try Again")
+    });
 
+    it("")
 
   });
 

@@ -8,7 +8,10 @@ var ScoreCard = function () {
   };
 
   ScoreCard.prototype.inputScore = function(score) {
-    return score;
+    if (score > -1 && score < 10)
+      return score;
+    else
+      return "Try Again";
   };
 
 };
