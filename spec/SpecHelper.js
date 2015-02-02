@@ -8,12 +8,9 @@ describe('BowlingScoreCard', function(){
   describe("new game", function(){
 
     it("starts with score 0", function(){
-      expect(scorecard.score()).toEqual(0);
+      expect(scorecard.defaultScore()).toEqual(0);
     });
 
-    it("can have a player name", function(){
-
-    });
   })
 
 });
