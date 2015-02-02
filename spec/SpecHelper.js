@@ -7,10 +7,20 @@ describe('BowlingScoreCard', function(){
 
   describe("new game", function(){
 
-    it("starts with score 0", function(){
-      expect(scorecard.defaultScore()).toEqual(0);
+    it("starts with total 0", function(){
+      expect(scorecard.defaultTotal()).toEqual(0);
     });
 
-  })
+  });
+
+  describe("scores", function(){
+    
+    it("can return the score", function(){
+      expect(scorecard.inputScore(5)).toEqual(5);
+    });
+
+
+
+  });
 
 });
