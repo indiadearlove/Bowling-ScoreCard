@@ -23,7 +23,21 @@ describe('BowlingScoreCard', function(){
       expect(scorecard.inputScore(11)).toEqual("Try Again")
     });
 
-    it("")
+    it("if X is entered score is 10", function(){
+      expect(scorecard.inputScore('X')).toEqual(10)
+    });
+
+  });
+
+  describe("rounds", function(){
+
+    it("inputs two scores per round", function(){
+      expect(scorecard.round(3, 4)).toEqual(7)
+    });
+
+    it("scores can not be more then 10", function(){
+      expect(scorecard.round(6, 7)).toEqual("Try Again")
+    });
 
   });
 
